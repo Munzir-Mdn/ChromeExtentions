@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prompt → JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <img src="icons/icon48.png" alt="" width="24" height="24">
+      <h1>Prompt → JSON</h1>
+    </header>
+    <section>
+      <textarea id="input" placeholder="Paste your prompt here..."></textarea>
+      <div class="row">
+        <button id="convert">Convert</button>
+        <button id="copy">Copy</button>
+      </div>
+      <textarea id="output" placeholder="JSON will appear here..." readonly></textarea>
+      <label class="opt"><input type="checkbox" id="wrapMarkdown"> Wrap in ```json</label>
+    </section>
+    <footer>
+      <a id="openOptions" href="#">Schema Options</a>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

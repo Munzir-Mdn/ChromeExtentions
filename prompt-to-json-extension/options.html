@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prompt → JSON Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <header>
+      <h1>Schema Template</h1>
+      <p>Customize the base JSON your prompts will use.</p>
+    </header>
+    <section>
+      <textarea id="template"></textarea>
+      <label class="opt"><input type="checkbox" id="wrapMarkdown"> Wrap output in ```json fences</label>
+      <div class="row">
+        <button id="save">Save</button>
+        <button id="restore">Restore Default</button>
+      </div>
+    </section>
+    <script src="options.js"></script>
+  </body>
+</html>
