@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Options — Prompt ⇄ JSON Converter</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<main style="padding:16px;max-width:720px;margin:0 auto"><h2>Options</h2>
+<p>Set an optional OpenAI API key to enable AI mode in the popup. Keys are stored in <code>chrome.storage.sync</code>.</p>
+<label for="apiKey">OpenAI API Key</label><input id="apiKey" type="password" placeholder="sk-..." style="width:100%">
+<div style="margin-top:10px"><button id="save">Save</button><button id="clear">Clear</button></div>
+<p style="margin-top:16px;font-size:12px;color:#b9bce0">AI mode is optional. Offline heuristic conversion works without a key.</p>
+</main><script src="options.js"></script></body></html>

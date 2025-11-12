@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt ⇄ JSON Converter</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>Prompt ⇄ JSON</h1><nav class="tabs">
+<button id="tab-heuristic" class="active">Manual (Offline)</button>
+<button id="tab-ai">AI (OpenAI)</button></nav></header>
+<main>
+<section class="input-block"><label for="inputText">Input</label>
+<textarea id="inputText" placeholder="Paste your prompt here OR JSON here"></textarea></section>
+<section class="controls"><div class="left">
+<label for="schemaSelect">Schema</label><select id="schemaSelect">
+<option value="default">Default</option><option value="task">Task-Oriented</option><option value="cvjd">CV vs JD</option>
+</select></div>
+<div class="middle"><button id="toJsonBtn">To JSON</button><button id="toPromptBtn">To Prompt</button></div>
+<div class="right"><button id="copyBtn">Copy Output</button><button id="saveBtn">Download .txt</button></div>
+</section>
+<section class="output-block"><label for="outputText">Output</label>
+<textarea id="outputText" readonly placeholder="Output will appear here"></textarea></section>
+<section id="aiNotice" class="ai-notice hidden">
+<p><strong>AI Mode:</strong> Requires an OpenAI API key. Set it in <a href="options.html" target="_blank">Options</a>.</p>
+<div class="ai-controls"><label for="model">Model</label><input id="model" value="gpt-4o-mini" />
+<label for="aiMode">Direction</label><select id="aiMode">
+<option value="tojson">Prompt → JSON</option><option value="toprompt">JSON → Prompt</option></select>
+<button id="runAiBtn">Run AI</button></div></section></main>
+<footer><a href="README.html" target="_blank">README</a></footer>
+<script src="popup.js"></script></body></html>

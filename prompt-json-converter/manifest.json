@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt \u21c4 JSON Converter",
+  "version": "1.0.0",
+  "description": "Convert any GPT-style prompt to clean JSON and back. Works offline (heuristics) or with an optional OpenAI API key.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Prompt \u21c4 JSON Converter"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
