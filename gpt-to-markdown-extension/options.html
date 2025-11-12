@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GPT → Markdown Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <h1>Options</h1>
+    <div class="row">
+      <label>
+        <input type="checkbox" id="enableFrontMatter">
+        Enable YAML front matter
+      </label>
+    </div>
+    <div class="row">
+      <label>Default tags (comma separated):</label>
+      <input id="defaultTags" type="text" placeholder="gpt,prompt,markdown">
+    </div>
+    <div class="row">
+      <label>Default author:</label>
+      <input id="defaultAuthor" type="text" placeholder="You">
+    </div>
+    <div class="row">
+      <label>
+        <input type="checkbox" id="autoTitle">
+        Auto-detect title from first line
+      </label>
+    </div>
+    <div class="row">
+      <button id="save">Save</button>
+      <span id="status"></span>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

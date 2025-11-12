@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GPT → Markdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>GPT → Markdown</h1>
+      <a class="link" href="options.html" target="_blank">Options</a>
+    </header>
+
+    <label for="input">Paste your prompt:</label>
+    <textarea id="input" placeholder="Paste GPT prompt here..."></textarea>
+
+    <div class="buttons">
+      <button id="convert">Convert</button>
+      <button id="copy">Copy .md</button>
+      <button id="download">Download .md</button>
+    </div>
+
+    <label for="output">Markdown result:</label>
+    <textarea id="output" readonly></textarea>
+
+    <footer>
+      <small>Right-click a selection on any page to convert instantly.</small>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
